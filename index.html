@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="title" property="og:title" content="Survival Island Changelog"/>
+  <meta name="description" property="og:description" content="Changelog for Survival Island, our survival server in Just Cause 3 Multiplayer."/>
+  <meta property="og:image" content="http://paradigm.mp/si_logo.png">
+  <meta property="og:url" content="http://paradigm.mp/si-changelog">
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#FF8400"/>
+  <meta name="keywords" property="og:keywords" content="Paradigm,MP,multiplayer,dev_34,lord farquaad,fallen civilization,golf,jc2mp,jc2-mp,jc3mp,just cause 2 multiplayer,just cause 3 multiplayer,just cause,survival island,survival,server">
+
+  <title>Survival Island Changelog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.19/css/uikit.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+    <img src='css/bg.jpg' style='position: fixed;
+    height: 100%;
+    width: 100%;'>
+  <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-large uk-margin-top uk-align-center">
+    <h1 style="font-weight:200;" class="uk-margin-medium uk-text-center">
+        Survival Island Changelog
+      </h1>
+    <h2>1.1 Release Update <span class="uk-text-muted uk-text-small">October 17, 2018</span></h2>
+    <!--   Added   -->
+    <span class="uk-text-lead">Inventory</span>
+    <div class="section">
+      <ul class="uk-list">
+        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added an animation to item durabilities when changed</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Updated responsiveness of inventory tooltips</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Updated responsiveness of item usage, shifting, and rearrangement</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed various small issues</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed not being able to drop one item out of some stacks, such as Googly Eyes (thanks Hugom!)</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed a bug where the inventory would not load for some players due to custom properties</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed a bug where some items would not unequip when dropped</li>
+        <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Death drops have been reworked. You no longer randomly drop entire stacks from your inventory when you die base on level. Instead, certain stacks are randomly chosen and a certain percentage of items from those stacks are dropped. This still does allow for the entire stack to be dropped, but it does not happen all the time. This has been worked into the new levelling system.</li>
+      </ul>
+    </div>
+
+    <span class="uk-text-lead">Loot</span>
+    <div class="section">
+      <ul class="uk-list">
+          <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Superboxes. Sometimes a normal lootbox will become a Superbox, which means that it will have loot from all tiers, including legendary tier items.</li>
+          <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added loot hotzones. Certain items can only be found in these hotzones.</li>
+          <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added sound effects to loot.</li>
+          <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added 300+ more loot spawns. Total is now OVER 9100.</li>
+          <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed an issue where lootboxes that were very far would sometimes load and cause slight frame drops</li>
+      </ul>
+    </div>
+
+    <span class="uk-text-lead">Items</span>
+    <div class="section">
+        <ul class="uk-list">
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Model Change
+              <ul class="uk-list uk-list-bullet">
+                  <li>This item allows you to change into other character models besides Rico</li>
+              </ul>
+              <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Landclaim
+                <ul class="uk-list uk-list-bullet">
+                    <li>Comes in sizes ranging from 50m to 400m, though larger sizes are rarer</li>
+                    <li>This item allows you to claim an area of land so that you can build in it</li>
+                </ul>
+                <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Storage
+                  <ul class="uk-list uk-list-bullet">
+                      <li>Replaces Small and Large Storages</li>
+                      <li>By default, it can hold up to 6 items</li>
+                      <li>Can no longer be sometimes placed underwater</li>
+                      <li>You can rename it</li>
+                      <li>You can no longer dismount it from your storages menu on F7. Instead, you have to open it up and then rename it to <b>DISMOUNT</b></li>
+                      <li>You can apply various upgrades to improve it
+                          <ul class="uk-list uk-list-bullet">
+                              <li><b>Space Upgrade</b>
+                                <ul class="uk-list uk-list-bullet">
+                                    <li>For each applied, adds +1 space to a Storage</li>
+                                    <li>Can have up to 6 applied to a Storage</li>
+                                </ul></li>
+                                <li><b>Keypad Lock</b>
+                                  <ul class="uk-list uk-list-bullet">
+                                      <li>Use to lock your Storage with a 4 digit combination</li>
+                                </ul></li>
+                                <li><b>Identity Lock</b>
+                                  <ul class="uk-list uk-list-bullet">
+                                      <li>Use to lock your Storage to <b>Only Me</b>, <b>Friends</b>, or <b>Everyone</b></li>
+                                </ul></li>
+                                <li><b>Explosive Upgrade</b>
+                                  <ul class="uk-list uk-list-bullet">
+                                      <li>Causes the Storage to explode and kill the person who broke into it if someone uses a Hacking Module to open it, also destroying all the items inside along with the storage</li>
+                                      <li>Can be disarmed using a Disarm Module</li>
+                                </ul></li>
+                                <li><b>Zap Upgrade</b>
+                                  <ul class="uk-list uk-list-bullet">
+                                      <li>Causes the storage to zap and kill the person who broke into it if someone uses a Hacking Module to open it</li>
+                                      <li>Zap Upgrade keeps working until removed or disarmed</li>
+                                      <li>Can be disarmed using a Disarm Module</li>
+                                </ul></li>
+                                <li><b>Shield Upgrade</b>
+                                  <ul class="uk-list uk-list-bullet">
+                                      <li>Blocks one hacking attempt and then is destroyed</li>
+                                      <li>Can have a maximum of 4 on one storage</li>
+                                </ul></li>
+                                <li><b>Disguise Upgrade</b>
+                                  <ul class="uk-list uk-list-bullet">
+                                      <li>Causes the Storage to appear as something other than a storage</li>
+                                      <li>Possible disguises: tree, rock, explosive barrel</li>
+                                </ul></li>
+                          </ul>
+                      </li>
+                  </ul>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Hacking Module
+              <ul class="uk-list uk-list-bullet">
+                <li>This item can be used to hack into storages</li>
+              </ul>
+            </li>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Disarming Module
+              <ul class="uk-list uk-list-bullet">
+                <li>This item can be used to disarm traps that are on storages</li>
+              </ul>
+            </li>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Trap Detector
+              <ul class="uk-list uk-list-bullet">
+                <li>This item can be used to scan a storage for traps</li>
+              </ul>
+            </li>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Keypad Lock</li>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Identity Lock</li>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Space Upgrade</li>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Explosive Upgrade</li>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Shield Upgrade</li>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Disguise Upgrade</li>
+            <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Radar
+              <ul class="uk-list uk-list-bullet">
+                <li>Use this item to look around for nearby players.</li>
+                <li>Rarely found in certain areas only.</li>
+                <li>Requires Batteries to use.</li>
+              </ul></li>
+              <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added Batteries
+                <ul class="uk-list uk-list-bullet">
+                  <li>Required to use a Radar</li>
+                </ul></li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed not being able to equip a Radar after dropping Batteries and picking them up again (also fixed other issues that were related)</li>
+        <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Increased durability of Ring of Regeneration</li>
+        <li><span class="uk-label uk-label-warning uk-text-small uk-margin-right uk-text-center">Removed</span>Removed Small Storage</li>
+        <li><span class="uk-label uk-label-warning uk-text-small uk-margin-right uk-text-center">Removed</span>Removed Large Storage</li>
+     </ul>
+    </div>
+
+    <span class="uk-text-lead">Survival HUD</span>
+    <div class="section">
+      <ul class="uk-list">
+        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added animation to survival hud’s show/hide arrow</li>
+        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added grapplehook, parachute, and wingsuit durability indicators to survival hud</li>
+      </ul>
+    </div>
+
+    <span class="uk-text-lead">Experience & Levels</span>
+    <div class="section">
+      <ul class="uk-list">
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed an issue with gaining multiple levels at one time</li>
+        <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Set max level to 30</li>
+        <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Adjusted levelling curve to be quicker in the beginning and slower at the end</li>
+      </ul>
+    </div>
+
+    <span class="uk-text-lead">Storages</span>
+    <div class="section">
+      <ul class="uk-list">
+        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added sound effects from inventory to loot and storages</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Increased responsiveness of item taking so you can take items quicker now</li>
+        <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Increased storages gained per level due to new levelling system</li>
+        <li><span class="uk-label uk-label-warning uk-text-small uk-margin-right uk-text-center">Removed</span>Removed Dismount button from the menu. You must open the storage to dismount it now (see above).</li>
+      </ul>
+    </div>
+
+    <span class="uk-text-lead">Combat</span>
+    <div class="section">
+      <ul class="uk-list">
+        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Added arrows to where players log out that last for 30 seconds</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span><b>/suicide</b> command
+          <ul class="uk-list uk-list-bullet">
+            <li>Cancels when you take damage now</li>
+            <li>Cannot be used when you have taken damage recently</li>
+          </ul>
+        </li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed a few small issues</li>
+      </ul>
+    </div>
+
+    <span class="uk-text-lead">Tutorial</span>
+    <div class="section">
+      <ul class="uk-list">
+        <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>No longer optional for new players</li>
+      </ul>
+    </div>
+
+    <span class="uk-text-lead">Chat</span>
+    <div class="section">
+      <ul class="uk-list">
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Updated tooltips to match that of the inventory</li>
+      </ul>
+    </div>
+
+    <span class="uk-text-lead">Character</span>
+    <div class="section">
+      <ul class="uk-list">
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Hopefully fixed players not loading in sometimes after selecting their character</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed players being able to run around sometimes while in the character select screen</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed a bug where a player’s hunger or thirst could become negative</li>
+      </ul>
+    </div>
+
+    <span class="uk-text-lead">Backend</span>
+    <div class="section">
+      <ul class="uk-list">
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed resources sometimes not being able to load for a while</li>
+      </ul>
+    </div>
+
+
+
+    <hr class="uk-divider-icon">
+    
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.19/js/uikit.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.19/js/uikit-icons.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
+
+  
+</body>
+</html>
