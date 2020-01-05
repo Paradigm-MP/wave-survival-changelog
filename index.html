@@ -28,30 +28,27 @@
     <h1 style="font-weight:200;" class="uk-margin-medium uk-text-center">
         Wave Survival Changelog
     </h1>
-    <h2>Public Release 1.0 on <span style="color: red"><strong>RedM</strong> </span></h2>
-    <div style="text-align: left" class="uk-text-muted uk-text-small">December 22, 2019</div>
-    <div style="text-align: left" class="uk-text-muted uk-text-small">301 code commits (844 total)</div>
-    <hr class="uk-divider-icon">
     <!--   Added   -->
     <span class="uk-text-lead">Release 1.2</span>
-    <div style="text-align: left" class="uk-text-muted uk-text-small">January X, 2020</div>
-    <div style="text-align: left" class="uk-text-muted uk-text-small">X code commits (X total)</div>
+    <div style="text-align: left" class="uk-text-muted uk-text-small">January 5, 2020</div>
+    <div style="text-align: left" class="uk-text-muted uk-text-small">201 code commits (1,045 total)</div>
     <p>This release focused on adding new features to make the gamemode more enjoyable.</p>
     <div class="section">
       <ul class="uk-list">
         <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>New map: Rhodes</li>
-        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Powerups! Enemies now can drop powerups when killed. Powerups give players temporary boosts and abilities, such as double money, instant kill, lightning strike, and more.</li>
+        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Powerups! Enemies now can drop powerups when killed. Powerups give players temporary boosts and abilities, such as double money, instant kill, lightning strike, and more</li>
         <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Player leave/join messages in chat</li>
         <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Weapon spawns and powerup spawns now have glowing zones around them to make them more visible</li>
-        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Shop! The shop is now active. However, there are only a few character models to choose because not all models work properly, and it requires manual testing. We are investigating how to make all models work, so please hold on! All money earned ingame is added to your shop money.</li>
-        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Buying a weapon at a weapon spawn now restores the durability/condition of the weapon.</li>
+        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Shop! The shop is now active. However, there are only a few character models to choose because not all models work properly, and it requires manual testing. We are investigating how to make all models work, so please hold on! All money earned ingame is added to your shop money</li>
+        <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Buying a weapon at a weapon spawn now restores the durability/condition of the weapon</li>
         <li><span class="uk-label uk-label-success uk-text-small uk-margin-right uk-text-center">Added</span>Updates section to the main menu. Now you can see all the updates while you are on the server.</li>
         <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Stopped loading all parts of maps, and instead now only load in certain parts of maps. This means that the streets are no longer cluttered, and the missing green house in Valentine still spawns. Less lag!</li>
-        <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Complete rewrite of our enemy spawn manager. This will allow us to make updates more smoothly as we transition into wave-based spawning. (different wave types woo!)</li>
+        <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Complete rewrite of our enemy spawning system. This will allow us smoothily implement different kinds of enemies. (different wave types coming soon woo!)</li>
         <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Players not being able to start games sometimes</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Hopefully fixed an issue where enemies are invisible</li>
         <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Weapon and revive icons not showing up sometimes</li>
         <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Players not reviving properly on new rounds, which caused them to be invincible and games to never end</li>
-        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Dead bodies not being removed properly. It mostly works now, at least better than before.</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Dead bodies not being removed properly. It mostly works now, at least better than before</li>
       </ul>
     </div>
 
@@ -74,15 +71,20 @@
         <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Mitigated an issue with rounds taking very long by adjusting the number and rate of enemies that are spawned</li>
         <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Adjusted weapon prices and ammunition amounts based on weapon statistics</li>
         <li><span class="uk-label uk-label-primary uk-text-small uk-margin-right uk-text-center">Changed</span>Players can now join ongoing games within 15 seconds of the game starting to avoid having to spectate the first round</li>
-        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed a bug with the spectate feature where players joining existing games would spawn underground instead of spectating alive players.</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed a bug with the spectate feature where players joining existing games would spawn underground instead of spectating alive players</li>
         <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed various small issues</li>
-        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed multiple issues with the revive feature involving players joining and leaving.</li>
+        <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed multiple issues with the revive feature involving players joining and leaving</li>
         <li><span class="uk-label uk-label-danger uk-text-small uk-margin-right uk-text-center">Fixed</span>Fixed some of the missing objects in the Valentine map</li>
       </ul>
     </div>
 
     <hr class="uk-divider-icon">
-    
+
+    <h2>Public Release 1.0 on <span style="color: red"><strong>RedM</strong> </span></h2>
+    <div style="text-align: left" class="uk-text-muted uk-text-small">December 22, 2019</div>
+    <div style="text-align: left" class="uk-text-muted uk-text-small">301 code commits (844 total)</div>
+
+    <hr>
   </div>
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.19/js/uikit.min.js'></script>
